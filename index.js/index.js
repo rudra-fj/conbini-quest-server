@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // --- 3. CONNECT TO YOUR DATABASE ---
-// This uses the environment variables from Render and includes the SSL config
+// This configuration is specifically for the Supabase Connection Pooler
 const pool = new Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
